@@ -33,7 +33,7 @@ app.post("/video", async (req, res) => {
   await Promise.all(urls.map(url => downloader.fromUrl(url)));
 
   const resultVideoDist = `${nanoid()}.${req.body.outputExtension}`;
-  const args = `${urls.map(url => `-i ${path.basename(url.pathname)}`).join(" ")} -filter_complex ${urls.map((url, index) => `[${index}:v][${index}:a]`).join("")}concat=n=${urls.length}:v=1:a=1[out] -map [out] ${resultVideoDist}`.split(" ");
+  const args = `-y ${urls.map(url => `-i ${path.basename(url.pathname)}`).join(" ")} -filter_complex ${urls.map((url, index) => `[${index}:v][${index}:a]`).join("")}concat=n=${urls.length}:v=1:a=1[out] -map [out] ${resultVideoDist}`.split(" ");
 
   await ffmpeg.call(args);
   urls.forEach(url => fs.unlink(path.basename(url.pathname), () => {}));
