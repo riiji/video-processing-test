@@ -1,0 +1,130 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "jest": true
+  },
+  "extends": [
+    "eslint:recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 11
+  },
+  "rules": {
+    "arrow-body-style": "off",
+    "import/no-dynamic-require": "off",
+    "array-callback-return": "off",
+    "array-element-newline": ["error", "consistent"],
+    "arrow-parens": ["error", "as-needed"],
+    "arrow-spacing": [
+      "error",
+      {
+        "after": true,
+        "before": true
+      }
+    ],
+    "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+    "no-plusplus": "off",
+    "no-continue": "off",
+    "guard-for-in": "off",
+    "no-case-declarations": "off",
+    "no-nested-ternary": "off",
+    "no-prototype-builtins": "off",
+    "no-unused-vars": ["error", { "args": "none" }],
+    "camelcase": "off",
+    "comma-dangle": ["error", "only-multiline"],
+    "comma-spacing": [
+      "error",
+      {
+        "after": true,
+        "before": false
+      }
+    ],
+    "comma-style": ["error", "last"],
+    "curly": "off",
+    "dot-location": "off",
+    "dot-notation": ["error", { "allowKeywords": false }],
+    "eqeqeq": ["error", "always"],
+    "func-style": ["error", "declaration", { "allowArrowFunctions": true }],
+    "function-paren-newline": "off",
+    "func-names": "off",
+    "implicit-arrow-linebreak": "off",
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "init-declarations": "off",
+    "key-spacing": ["error", { "mode": "strict", "afterColon": true }],
+    "keyword-spacing": [
+      "error",
+      {
+        "after": true
+      }
+    ],
+    "lines-between-class-members": "error",
+    "max-depth": ["error", 4],
+    "max-len": [
+      "error",
+      {
+        "code": 120,
+        "tabWidth": 2,
+        "ignoreComments": true,
+        "ignoreUrls": true,
+        "ignoreRegExpLiterals": true
+      }
+    ],
+    "max-nested-callbacks": ["error", { "max": 3 }],
+    "multiline-comment-style": ["error", "starred-block"],
+    "newline-after-var": "off",
+    "no-magic-numbers": "off",
+    "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 1 }],
+    "no-restricted-syntax": "off",
+    "no-await-in-loop": "off",
+    "no-unused-expressions": ["error", { "allowTernary": true }],
+    "no-use-before-define": ["error", { "functions": false, "variables": true, "classes": false }],
+    "object-curly-newline": ["error", { "multiline": true }],
+    "object-curly-spacing": ["error", "always"],
+    "object-shorthand": ["error", "always", { "avoidQuotes": true }],
+    "one-var": "off",
+    "one-var-declaration-per-line": "off",
+    "operator-assignment": "off",
+    "padded-blocks": "off",
+    "padding-line-between-statements": "off",
+    "prefer-arrow-callback": "error",
+    "prefer-const": "off",
+    "prefer-destructuring": "off",
+    "prefer-exponentiation-operator": "off",
+    "prefer-named-capture-group": "off",
+    "no-restricted-globals": "off",
+    "prefer-regex-literals": "off",
+    "quote-props": ["error", "consistent-as-needed"],
+    "quotes": ["error", "double"],
+    "radix": "off",
+    "rest-spread-spacing": ["error", "never"],
+    "semi": ["error", "always"],
+    "semi-spacing": ["error", { "before": false, "after": true }],
+    "semi-style": "off",
+    "sort-keys": "off",
+    "sort-vars": "off",
+    "space-before-blocks": ["error", "always"],
+    "space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "always",
+        "named": "never",
+        "asyncArrow": "always"
+      }
+    ],
+    "space-in-parens": ["error", "never"],
+    "spaced-comment": "off",
+    "template-curly-spacing": ["error", "never"],
+    "template-tag-spacing": ["error", "never"],
+    "unicode-bom": "off",
+    "valid-jsdoc": ["error", { "requireReturn": false, "requireReturnDescription": false }],
+    "vars-on-top": "off",
+    "wrap-iife": ["error", "any"],
+    "wrap-regex": "off",
+    "yield-star-spacing": "off",
+    "yoda": "error",
+    "function-call-argument-newline": ["error", "consistent"]
+  }
+}
